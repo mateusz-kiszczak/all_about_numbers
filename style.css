@@ -1,0 +1,138 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Roboto Mono', 'Courier New', Courier, monospace;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: darkcyan;
+}
+
+/* TYPOGRAPHY */
+html {
+  font-size: 18px;
+}
+
+h1,
+h2 {
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 16px 0;
+}
+
+h2 {
+  font-size: 1.75rem;
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+
+#user-number {
+  font-size: 1.25rem;
+}
+
+#input-container > label,
+fieldset > legend,
+#show-button {
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+
+#show-button {
+  text-transform: uppercase;
+}
+
+/* MAIN SECTION */
+main {
+  background-color: lightyellow;
+  margin: 0 auto;
+  max-width: 500px;
+  min-width: 300px;
+}
+
+main > * {
+  padding: 16px;
+}
+
+#input-section {
+  background-color: lightblue;
+}
+
+/* FORM */
+#input-container {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 8px;
+}
+
+#user-number {
+  padding: .5rem .75rem;
+  width: 100%;
+}
+
+fieldset {
+  margin-bottom: 8px;
+  padding: 8px;
+}
+
+fieldset > legend {
+  padding: 0 8px;
+}
+
+#show-button {
+  background-color: green;
+  color: white;
+  cursor: pointer;
+  padding: 4px 16px;
+  transition: all .2s;
+}
+
+#show-button:hover {
+  background-color: lightgreen;
+  color: black;
+}
+
+@media only screen and (min-width: 400px) {
+  #radios-container {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+  }
+  
+  #radios-container > div:nth-of-type(2) {
+    margin-left: 32px;
+  }
+}
+
+/* OUTPUT SECTION */
+#output-container {
+  align-items: center;
+  background-color: white;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  min-height: 100px;
+  padding: 16px;
+  width: 100%;
+}
+
+#load-icon {
+  animation: spin-anim 1s linear infinite;
+  border: 15px solid blue;
+  border-left-color: transparent;
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+}
+
+@keyframes spin-anim {
+  from  {transform: rotate(0deg);}
+  to    {transform: rotate(360deg);}
+}

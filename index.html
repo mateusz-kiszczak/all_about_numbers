@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>All about numbers</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main>
+    <h1>All about numbers</h1>
+    <section id="input-section" class="section-container">
+      <h2>Try some number</h2>
+      <form>
+        <div id="input-container">
+          <label for="user-number">Place a number</label>
+          <input type="number" name="user-number" id="user-number">
+        </div>
+        <fieldset>
+          <legend>Choose the subject</legend>
+          <div id="radios-container">
+            <div>
+              <input type="radio" id="trivia" name="subject" value="trivia" checked>
+              <label for="trivia">Fun fact</label>
+            </div>
+            <div>
+              <input type="radio" id="math" name="subject" value="math">
+              <label for="math">Math</label>
+            </div>
+          </div>
+        </fieldset>
+        <input type="button" value="show" id="show-button">
+      </form>
+    </section>
+    <section class="section-container">
+      <h2>Result</h2>
+      <div id="output-container">
+        <!-- <div id="load-icon"></div> -->
+      </div>
+    </section>
+  </main>
+</body>
+</html>
